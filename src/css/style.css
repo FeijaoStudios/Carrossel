@@ -1,0 +1,84 @@
+body {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+main:after {
+    content: '';
+    min-height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.85);
+    z-index: -1;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.infos .logo {
+    max-width: 350px;
+    margin-bottom: 80px;
+}
+
+.infos .description {
+    width: 100%;
+    font-size: 24px;
+    color: #ffffff;
+    line-height: 30px;
+}
+
+.carousel-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.carousel-buttons .button {
+    background-color: #ffffff;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    border-color: #ffffff;
+    cursor: pointer;
+}
+
+.carousel-buttons .button.select {
+    background-color: #1d8346;
+}
+
+.carousel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.carousel .image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: none;
+    animation: changeImage 0.7s;
+}
+
+.carousel .image.active {
+    display: block;
+}
+
+@keyframes changeImage {
+    from{
+        opacity: 0.85
+    }
+    to{
+        opacity: 1
+    }
+}

@@ -1,0 +1,46 @@
+@media (max-width: 1280px) {
+    body {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .infos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .infos .logo {
+        max-width: 400px;
+    }
+
+    .infos .description {
+        width: 100%;
+        text-align: center;
+    }
+
+    .container {
+        min-height: 70vh;
+        gap: 50px;
+    }
+}
+
+@media (max-width: 425px) {
+    body {
+        padding: 40px;
+    }
+    
+    .infos .logo {
+        max-width: 300px;
+    }
+
+    .infos .description {
+        width: 100%;
+    }
+
+    .container {
+        min-height: 70vh;
+        gap: 50px;
+    }
+}
